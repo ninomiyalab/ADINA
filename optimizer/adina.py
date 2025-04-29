@@ -21,7 +21,7 @@ class Adina(tf.keras.optimizers.Optimizer):  #Careate 29 April 2025 for IJCNN 20
             "epsilon hat" in the Kingma and Ba paper (in the formula just before
             Section 2.1), not the epsilon in Algorithm 1 of the paper. Defaults
             to `1e-7`.
-        a, b: Original hyperparameters in ADINA. Defaults to `0.9, 0.01`.
+        a, b: Original hyperparameters in ADINA. Defaults to `0.1, 0.9`.
         
         amsgrad: Boolean. Whether to apply AMSGrad variant of this algorithm
             from the paper "On the Convergence of Adam and beyond". Defaults
@@ -35,8 +35,8 @@ class Adina(tf.keras.optimizers.Optimizer):  #Careate 29 April 2025 for IJCNN 20
         beta_1=0.9,
         beta_2=0.999,
         epsilon=1e-7,
-        a = 0.9,
-        b = 0.01,
+        a = 0.1,
+        b = 0.9,
         amsgrad=False,
         weight_decay=None,
         clipnorm=None,

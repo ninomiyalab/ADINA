@@ -3,7 +3,9 @@ from keras import ops
 
 class Adina(tf.keras.optimizers.Optimizer):  #Careate 29 April 2025 for IJCNN 2025
     """Optimizer that implements the ADINA algorithm.
-
+        ADINA (Adaptive Momentum Estimation in DIN Algorithm) 
+        　integrates second-order optimization dynamics with adaptive techniques derived from Adam. 
+        The proposed method has been accepted for publication and presentation at IJCNN 2025.
     Args:
         learning_rate: A float, a
             `keras.optimizers.schedules.LearningRateSchedule` instance, or
